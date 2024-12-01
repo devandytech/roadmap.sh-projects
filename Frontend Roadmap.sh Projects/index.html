@@ -2,58 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="description" content="A simple structured single-page CV webpage using HTML and applying HTML SEO optimization a project by Roadmap.sh">
+    <meta name="keywords" content="HTML, HTML single-page CV, search engine optimization, html meta tags">
+    <meta name="author" content="Oseremen Godstime">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Single Page CV">
+    <meta property="og:type" content="Webpage">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="A simple structured single-page CV webpage using HTML and applying HTML SEO optimization a project by Roadmap.sh">
+    <meta property="og:site_name" content="Single Page CV Webpage">
+    <meta property="og:locale" content="en_US">
+    <!-- Favicon link for webpage icon -->
+    <link rel="icon" href="https://www.flaticon.com/free-icon/cv_3757968" type="image/x-icon" alt="webpage icon for easy identification in tabs, bookmarks and adress bar">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Single Page CV</title>
 </head>
 <body>
-    <div style="max-width: 800px; margin: auto">
-       <hr>
-       <header>
-           <h2>Your Name</h2>
-           
-           <h4>Junior Frontend Developer</h4>
-           <p>
+    <div class="container">
+    <header>
+        <hr>
+        <h1>
+            Your Name
+        </h1>
+    </header>
+    <main>
+        <section class="intro-section">
+            <h4 class="developer">Junior Frontend Developer</h4>
+            <address>
+                <p id="address">
            123 Your Street<br>
            Your City, ST 12345<br>
-           <a href="tel:1234567890">(123) 456-7890</a></br>
-           <a href="mailto:no_reply@example.com">no_reply@example.com</a><br>
+           <a id="mobile-number" href="tel:1234567890">(123) 456-7890</a></br>
+           <a id="email" href="mailto:no_reply@example.com">no_reply@example.com</a><br>
        </p>
-       </header>
+            </address>
+        </section>
+        <section class="skill-section">
+            <h4 class="skill">Skills</h4>
+            <p class="skill-list">HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web Design, Technical Writting, Presentation</p>
+        </section>
+        <section class="education-Section">
+            <h4 class="education">Education</h4>
+            <p class="degree">School Name, Location - Degree</p>
+            <p class="date">Month 20xx to Month 20xx</p>
+            <p>List of exciting things you did at university</p>
+        </section>
+        <section class="career-history">
+            <div class="inner-section-one">
+                <h4 class="experience">Experience</h4>
        
-       <section>
-           <h4>Skills</h4>
-           <p>HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web Design, Technical Writting, Presentation</p>
-           <h4>Education</h4>
-           <p>School Name, Location - Degree</p>
-           <p>Month 20xx to Month 20xx</p>
-           <p>List of exciting things you did at university</p>
-       </section>
+                <p class="past-job">Company Name, Location - Job Title</p>
+                <p class="date">Month 20xx to Month 20xx</p>
+                <ul>
+                    <li>Lists of achievements</li>
+                    <li>Lists of achievements</li>
+                    <li>Lists of achievements</li>
+                </ul>
+                <p>Skills: Lists of skills used or gained at this company</p>
+            </div>
        
-       <section>
-           <h4>Experience</h4>
-       
-           <p>Company Name, Location - Job Title</p>
-           <p>Month 20xx to Month 20xx</p>
-           <ul>
-               <li>Lists of achievements</li>
-               <li>Lists of achievements</li>
-               <li>Lists of achievements</li>
-           </ul>
-           <p>Skill: Lists of skill used or gained at this company</p>
-       
-           <p>Company Name, Location - Job Title</p>
-           <p>Month 20xx to Month 20xx</p>
-           <ul>
-               <li>Lists of achievements</li>
-               <li>Lists of achievements</li>
-               <li>Lists of achievements</li>
-           </ul>
-           <p>Skill: Lists of skill used or gained at this company</p>
-       </section>
-       
-       <section>
-           <h4>Across the Internet</h4>
-           <p>Add your LinkedIn, Github profile link</p>
-       </section>
+            <div class="inner-section-two">
+                <p class="job">Company Name, Location - Job Title</p>
+                <p class="date">Month 20xx to Month 20xx</p>
+                <ul>
+                    <li>Lists of achievements</li>
+                    <li>Lists of achievements</li>
+                    <li>Lists of achievements</li>
+                </ul>
+                <p>Skills: Lists of skills used or gained at this company</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <h4 class="internet">Across the Internet</h4>
+            <p>Add your LinkedIn, Github profile link</p>
+    </footer>
     </div>
 </body>
 </html>

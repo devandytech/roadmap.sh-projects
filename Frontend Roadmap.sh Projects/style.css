@@ -1,4 +1,82 @@
+/* 
+This is a stylesheets for the CV html code, all the styling come in a descending order of their html tag
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    width: 90%;
+    font-family: "cabin" sans-serif;
+    width: 90%;        
+    min-width: 50%;
+    margin: 1em auto;
+    padding: 3.9em 0 ;
+    color: #2b2b2b;
+    border: 0.2em solid black;
+}
+.container {
+    width: 85%;
     margin: auto;
+}
+hr {
+    width: 90%;
+    height: 0.2em;
+    border: none;
+    background-color: black;
+}
+h1 {
+    margin: 1em 0 0 0;
+}
+#address {
+    font-style: normal;
+    line-height: 1.3em;
+}
+section {
+    margin-bottom: 1.8em;
+}
+h4 {
+    color: #87c091;
+}
+.developer {
+    margin: 1em 0;
+    padding: 0;
+}
+.skill {
+    padding-bottom: 0.5em;
+}
+p.skill-list {
+    line-height: 1.35em;
+}
+.education, .experience {
+    padding-bottom: 1em;
+}
+.internet {
+    padding-bottom: 0.8em;
+}
+.degree, .past-job, .job {
+    color: #6199c8;
+}
+.degree {
+    padding-bottom: 0.3em;
+}
+.past-job {
+    padding-bottom: 0.4em;
+}
+.job {
+    padding-bottom: 0.55em;
+}
+.date {
+    padding-bottom: 0.8em;
+}
+ul li {
+    padding-bottom: 0.8em;
+    margin-left: 1.5em;
+}
+.inner-section-one {
+    margin-bottom: 1.5em;
+}
+#mobile-number, #email {
+    font-style: normal;
+    color: #2b2b2b;
+    text-decoration: none;
 }
