@@ -1,0 +1,219 @@
+/* 
+Note: Handwritten code, can be reuse for educational purposes no licences and restrictions.
+
+All css code are written in a descending order of the html element, properties, ids and classes. 
+
+Contributions, reviews and corrections are allowed.
+ */
+ 
+* {
+    padding: 0;
+    margin: 0;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        width: 95%;
+        max-width: 768px;
+        font-size: 0.9em;
+        margin: auto;
+        margin-bottom: 1em;
+        border: 1px solid black;
+    }
+    /* styling of the header and alignment */
+    header {
+        margin: auto;
+        padding-bottom: 2em;
+        text-align: center;
+        border: 1px solid black;
+    }
+    div.black-box {
+        width: 30px;
+        height: 30px;
+        margin: 1.5em auto 1em auto;
+        border-radius: 5px;
+        background-color: black;
+    }
+    nav {
+        margin: 1.5em 0 2em 0;
+    }
+    nav a {
+        text-decoration: none;
+        color: black;
+        padding: 0 0.15em;
+    }
+    h1 {
+        margin-bottom: 0.3em;
+        font-size: 1.4em;
+    }
+    header p.description {
+        color: lightgrey;
+    }
+    /* styling of the sidebar and alignment */
+    aside {
+        margin: auto;
+        padding-bottom: 0em;
+        text-align: center;
+        background-color: lightgrey;
+        border: 1px solid black;
+    }
+    aside h2 {
+        font-size: 1.1em;
+        padding: 1em;
+        background-color: white;
+        border: 1px solid black;
+    }
+    ul {
+        background-color: lightgrey;
+    }
+    ul li {
+        padding: 0.6em;
+        list-style: none;
+        border: 1px solid black;
+    }
+    ul li:last-child {
+        border-bottom: none;
+        padding-bottom: 1em;
+    }
+    ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    /* styling of the work section */
+    section.work {
+        margin: 0;
+        padding-bottom: 1.5em;        
+        background-color: lightgrey;
+        border: 1px solid black;
+    }
+    h2.work-experience {
+        font-size: 1.1em;
+        text-align: center;
+        margin: 0;
+        padding: 0.8em;
+        background-color: white;
+        border: 1px solid black;
+        border-bottom: 2px solid black;
+    }
+    .work h3 {
+        padding: 1.5em 0 0.5em 1.7em;
+        font-size: 0.8em;
+    }
+    .work p {
+        padding: 0.5em 0 0.7em 1.3em;
+    }
+    .work a {
+        text-decoration: none;
+        padding-left: 1.3em;
+    }
+    hr {
+        width: 100%;
+        margin: 1.5em 0 0 0;
+        border-bottom: 2px solid black;
+    }
+    .contribution {
+        width: 85%;
+        padding-right: 1.8em;
+    }
+    /* style for the education section */
+    section.education {
+        padding: 0.8em 0.5em 1.3em 1em;
+        border: 1px solid black;
+    }
+    section.education h2 {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0 0 1.3em 5.5em;
+    }
+    .courses {
+        padding: 0.6em 0 0.5em 0;
+    }
+    /* style for the footer,reviews and feedback */
+    footer {
+        margin: auto;
+        border: 1px solid black;
+    }
+    h2.reviews {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 1.7em 0 1.4em 2.5em;
+    }
+    div.review-one {
+        width: 93%;
+        padding: 1.5em 1em 1.5em 1.3em;
+        margin: auto;
+        margin-bottom: 1em;
+        border-radius: 28px;
+        box-sizing: border-box;
+        border: 2px solid black;
+    }
+    p.review-description {
+        padding-bottom: 1em;
+    }
+    p.reviewer-name {
+        color: lightgrey;
+    }
+    .copyright {
+        display: block;
+        font-size: 1.3em;
+        margin: 1.3em auto 1.5em auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+  .review-two, .review-three {
+    display: inline;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .review-two, .review-three {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 95%;
+        margin: auto;
+        border: 1px solid black;
+    }
+    header {
+        padding: 1.5em 1.5em 8em 1.5em;
+        border: 1px solid black;
+    }
+    .nav-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        margin-bottom: 5em;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .black-box {
+        width: 30px;
+        height: 30px;
+        margin-right: 0.5em;
+        border-radius: 5px;
+        background-color: black;
+    }
+    nav a {
+        padding-left: 0.4em;
+        text-decoration: none;
+        color: black;
+    }
+    nav a:not(:last-child) {
+        padding-right: 0.4em;
+    }
+    h1 {
+        font-size: 3em;
+        padding-bottom: 0.3em;
+    }
+    header h1, header p.description {
+        margin: auto;
+        text-align: center;
+    }
+
+}
