@@ -107,7 +107,7 @@ Contributions, reviews and corrections are allowed.
     }
     hr {
         width: 100%;
-        margin: 1.5em 0 0 0;
+        margin-top: 1.5em;
         border-bottom: 2px solid black;
     }
     .contribution {
@@ -132,25 +132,22 @@ Contributions, reviews and corrections are allowed.
         margin: auto;
         border: 1px solid black;
     }
-    h2.reviews {
+    h2.teachers-reviews {
         font-size: 1.1em;
         margin: 0;
         padding: 1.7em 0 1.4em 2.5em;
     }
-    div.review-one {
-        width: 93%;
-        padding: 1.5em 1em 1.5em 1.3em;
+    p.review-description-one {
+        width: 80%;
+        padding: 1.5em;
         margin: auto;
-        margin-bottom: 1em;
         border-radius: 28px;
-        box-sizing: border-box;
         border: 2px solid black;
     }
-    p.review-description {
-        padding-bottom: 1em;
-    }
-    p.reviewer-name {
+    span {
+        display: block;
         color: lightgrey;
+        margin-top: 10px;
     }
     .copyright {
         display: block;
@@ -160,17 +157,22 @@ Contributions, reviews and corrections are allowed.
     }
 }
 
-@media only screen and (orientation: landscape) {
-  .review-two, .review-three {
-    display: inline;
-  }
+@media only screen and (max-width: 480px) {
+    .review-description-two, .review-description-three {
+    display: none;
 }
 
-@media only screen and (orientation: portrait) {
-  .review-two, .review-three {
+/*@media only screen and (min-width: 680px), only screen and (orientation: landscape), and (min-width: 680px) {
+  .review-description-two, .review-description-three {
+    display: inline;
+  }
+}*/
+
+/* @media only screen and (orientation: portrait) {
+  .review-description-two, .review-description-three {
     display: none;
   }
-}
+}*/
 
 @media only screen and (min-width: 768px) {
     body {
@@ -215,5 +217,110 @@ Contributions, reviews and corrections are allowed.
         margin: auto;
         text-align: center;
     }
-
+    main {
+        display: grid;
+        grid-template-columns: 1.5fr repeat(2, 2fr);
+        grid-template-rows: auto;
+    }
+    .sidebar, .work, .education {
+        border: 1px solid black;
+        padding-top: 1.8em;
+    }
+    .sidebar h2 {
+        padding-left: 1.1em;
+    }
+    ul {
+        padding-top: 1em;
+    }
+    ul li {
+        padding: 1em 0 1em 1.8em;
+        list-style: none;
+        border: 1px solid black;
+    }
+    ul li:first-child {
+        border-top: none;
+    }
+    ul li:last-child {
+        border-bottom: none;
+        padding-bottom: 6em; 
+    }
+    ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    h2.work-experience {
+        padding-left: 1.1em;
+    }
+    hr {
+        margin-top: 1.5em;
+        border-bottom: 2px solid black;
+    }
+    .work p, .work a {
+        padding-left: 1.5em;
+    }
+    .work h3 {
+        padding: 1.5em 0 0.8em 1.3em;
+    }
+    .work p {
+        padding-bottom: 0.8em;
+    }
+    .contribution {
+        width: 90%;
+        padding-right: 1.8em;
+    }
+    .work a {
+        padding-bottom: 0.8em;
+        text-decoration: none;
+    }
+    .education h2 {
+        padding: 0 0 1em 1em;
+    }
+    section.education p {
+        padding-left: 1.5em;
+        padding-right: 1.8em;
+    }
+    .courses {
+        padding: 1.2em 0 1em 0;
+    }
+    footer {
+        margin: auto;
+        border: 1px solid black;
+    }
+    h2.teachers-reviews {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 1.7em 0 1.4em 2.5em;
+    }
+    div.reviews {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    p.review-description-one, p.review-description-two, p.review-description-three {
+        width: 100%;
+        padding: 1.5em;
+        border-radius: 28px;
+        border: 2px solid black;
+    }
+    p.review-description-one {
+        margin-left: 2.5em;
+        diaplay: flex;
+    }
+    p.review-description-two {
+        margin: 0 1em;
+    }
+    p.review-description-three {
+        margin: 0 1em;
+    }
+    span {
+        display: block;
+        color: lightgrey;
+        margin-top: 10px;
+    }
+    .copyright {
+        display: block;
+        font-size: 1.3em;
+        margin: 2em auto 10em auto;
+        text-align: center;
+    }
 }
