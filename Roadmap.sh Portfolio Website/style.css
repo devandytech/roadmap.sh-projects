@@ -10,7 +10,13 @@ Contributions, reviews and corrections are allowed.
     padding: 0;
     margin: 0;
 }
-@media only screen and (max-width: 768px) {
+.review {
+        width: 100%;
+        padding: 1.5em 1.2em;
+        border-radius: 30px;
+        border: 2px solid black;
+    }
+@media only screen and (max-width: 767px) {
     body {
         width: 95%;
         max-width: 768px;
@@ -137,7 +143,11 @@ Contributions, reviews and corrections are allowed.
         margin: 0;
         padding: 1.7em 0 1.4em 2.5em;
     }
+    .review {
+        display: none;
+    }
     p.review-description-one {
+        display: block;
         width: 80%;
         padding: 1.5em;
         margin: auto;
@@ -156,23 +166,6 @@ Contributions, reviews and corrections are allowed.
         text-align: center;
     }
 }
-
-@media only screen and (max-width: 480px) {
-    .review-description-two, .review-description-three {
-    display: none;
-}
-
-/*@media only screen and (min-width: 680px), only screen and (orientation: landscape), and (min-width: 680px) {
-  .review-description-two, .review-description-three {
-    display: inline;
-  }
-}*/
-
-/* @media only screen and (orientation: portrait) {
-  .review-description-two, .review-description-three {
-    display: none;
-  }
-}*/
 
 @media only screen and (min-width: 768px) {
     body {
@@ -272,6 +265,9 @@ Contributions, reviews and corrections are allowed.
         padding-bottom: 0.8em;
         text-decoration: none;
     }
+    .education {
+        padding-bottom: 2em;
+    }
     .education h2 {
         padding: 0 0 1em 1em;
     }
@@ -288,23 +284,19 @@ Contributions, reviews and corrections are allowed.
     }
     h2.teachers-reviews {
         font-size: 1.1em;
-        margin: 0;
-        padding: 1.7em 0 1.4em 2.5em;
+        margin: 1.7em 0 1.4em 2em;
     }
     div.reviews {
-        width: 80%;
+        width: 95%;
         display: flex;
         justify-content: space-between;
     }
-    p.review-description-one, p.review-description-two, p.review-description-three {
-        width: 100%;
-        padding: 1.5em;
-        border-radius: 28px;
-        border: 2px solid black;
+    .review {
+        display: inline;
     }
     p.review-description-one {
-        margin-left: 2.5em;
-        diaplay: flex;
+        margin-left: 3em;
+        margin-right: 1em;
     }
     p.review-description-two {
         margin: 0 1em;
@@ -320,7 +312,7 @@ Contributions, reviews and corrections are allowed.
     .copyright {
         display: block;
         font-size: 1.3em;
-        margin: 2em auto 10em auto;
+        margin: 8em auto 2em auto;
         text-align: center;
     }
 }
